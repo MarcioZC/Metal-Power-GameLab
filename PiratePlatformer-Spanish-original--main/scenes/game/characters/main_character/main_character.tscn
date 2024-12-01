@@ -330,6 +330,7 @@ animations = [{
 size = Vector2(8.25, 8)
 
 [node name="MainCharacter" type="CharacterBody2D" groups=["player"]]
+position = Vector2(0, 1)
 disable_mode = 1
 
 [node name="MainCharacterMovement" type="Node2D" parent="." node_paths=PackedStringArray("character", "main_animation", "effect_animation_sword", "audio_player")]
@@ -338,6 +339,14 @@ character = NodePath("..")
 main_animation = NodePath("../Animation")
 effect_animation_sword = NodePath("../EffectsSword")
 audio_player = NodePath("../AudioStreamPlayer2D")
+
+[node name="izquierda" type="Node2D" parent="MainCharacterMovement"]
+position = Vector2(-27, -7)
+scale = Vector2(-1, -1)
+
+[node name="derecha" type="Node2D" parent="MainCharacterMovement"]
+position = Vector2(28, -6)
+scale = Vector2(-1, -1)
 
 [node name="MainCharacterCollision" type="Node2D" parent="." node_paths=PackedStringArray("character")]
 script = ExtResource("57_7h47x")

@@ -12,6 +12,7 @@ extends Node2D
 @export var audio_player: AudioStreamPlayer2D # Reproductor de audios
 @onready var _collision := $"../AreaSword/CollisionShape2D" # Colicionador de espada
 @onready var _effect_sword := $"../EffectsSword" # Efectos de espada
+var bala = preload("res://scenes/game/bala.tscn")
 
 var gravity = 650 # Gravedad para el personaje
 var velocity = 200 # Velocidad de movimiento en horizontal
@@ -68,11 +69,17 @@ func _unhandled_input(event):
 	# Cuando se presiona la tecla b, lanzamos bomba
 	elif event.is_action_released("bomb"):
 		_current_movement = _movements.BOMB
+	
+		
 	_set_animation()
 
 
 # Función de movimiento general del personaje
 func _move(delta):
+	
+	if Input.is_action_pressed("clic"):
+		Instanciar()
+		
 	# Cuando se presiona la tecla (flecha izquierda), movemos el personaje a la izquierda
 	if Input.is_action_pressed("izquierda"):
 		character.velocity.x = -velocity
@@ -277,3 +284,13 @@ func _play_sword_effect():
 	
 	# Reproducimos el efecto de la espada
 	effect_animation_sword.play("attack_2_effect")
+
+func Instanciar():
+	var instancia = bala.instantiate()
+	get_tree().get_root().add_child(instancia)
+	if turn_side:
+		instancia.global_position = $derecha.global_position
+		instancia.va_derecha = true
+	else:
+		instancia.global_position = $izquierda.global_position
+		instancia.va_derecha = false

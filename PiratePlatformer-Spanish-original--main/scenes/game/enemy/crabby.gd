@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Enemigo
 ## Clase que controla animación y configuración del Enemigo
 ##
 ## Setea la animación y comportamiento del Enemigo 
