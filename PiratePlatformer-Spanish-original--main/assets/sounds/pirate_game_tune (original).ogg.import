@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://612c7wtm0su0"
+path="res://.godot/imported/pirate_game_tune (original).ogg-5863f0ebd44ef87011c7967d30ef673c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/pirate_game_tune (original).ogg"
+dest_files=["res://.godot/imported/pirate_game_tune (original).ogg-5863f0ebd44ef87011c7967d30ef673c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

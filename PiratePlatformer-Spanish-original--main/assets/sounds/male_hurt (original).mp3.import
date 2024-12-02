@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5dhdoo3f6ma7"
+path="res://.godot/imported/male_hurt (original).mp3-c3c2c74d55d68b609f7f832aed0e4f4b.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/male_hurt (original).mp3"
+dest_files=["res://.godot/imported/male_hurt (original).mp3-c3c2c74d55d68b609f7f832aed0e4f4b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

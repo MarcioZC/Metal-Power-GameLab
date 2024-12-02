@@ -45,7 +45,7 @@ var _jump_sound = preload("res://assets/sounds/jump.mp3")
 var _run_sound = preload("res://assets/sounds/running.mp3")
 var _dead_sound = preload("res://assets/sounds/dead.mp3")
 var _male_hurt_sound = preload("res://assets/sounds/male_hurt.mp3")
-var _hit_sound = preload("res://assets/sounds/slash.mp3")
+var _hit_sound = preload("res://assets/sounds/shot.mp3")
 
 
 # Función de inicialización

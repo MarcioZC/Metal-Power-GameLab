@@ -2,7 +2,7 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-uid="uid://5dhdoo3f6ma7"
+uid="uid://df5dr2xukj61h"
 path="res://.godot/imported/male_hurt.mp3-640bb1a5a7e0086302835b310fdb4e30.mp3str"
 
 [deps]
@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/male_hurt.mp3-640bb1a5a7e0086302835b310fdb4e3
 [params]
 
 loop=false
-loop_offset=0.0
-bpm=0.0
+loop_offset=0
+bpm=0
 beat_count=0
 bar_beats=4

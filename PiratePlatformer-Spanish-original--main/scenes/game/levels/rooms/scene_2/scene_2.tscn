@@ -1,8 +1,8 @@
 [gd_scene load_steps=21 format=3 uid="uid://dhor7t5klwdwx"]
 
+[ext_resource type="AudioStream" uid="uid://cw85qh1ai1y32" path="res://assets/sounds/pirate_game_tune.mp3" id="1_4nj8j"]
 [ext_resource type="TileSet" uid="uid://bx1rsqucrwm2i" path="res://assets/resources/bg_tile_set.tres" id="1_atorb"]
 [ext_resource type="PackedScene" uid="uid://ca3ueo0yewjov" path="res://scenes/game/characters/main_character/main_character.tscn" id="1_vi0ax"]
-[ext_resource type="AudioStream" uid="uid://dfb4lvan1kwl2" path="res://assets/sounds/pirate_theme.ogg" id="1_xvhx7"]
 [ext_resource type="PackedScene" uid="uid://8rbt5lmdrp0s" path="res://scenes/game/camera/camera.tscn" id="2_2f152"]
 [ext_resource type="PackedScene" uid="uid://b270rwdaoog0f" path="res://scenes/game/characters/npc/npc.tscn" id="3_7nl23"]
 [ext_resource type="PackedScene" uid="uid://c2nps502udtd6" path="res://scenes/game/levels/objects/front_palm_tree/front_palm_tree.tscn" id="4_6u8cq"]
@@ -27,7 +27,7 @@
 [node name="Main" type="Node2D"]
 
 [node name="AmbientSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("1_xvhx7")
+stream = ExtResource("1_4nj8j")
 bus = &"Ambient"
 
 [node name="MainCharacter" parent="." instance=ExtResource("1_vi0ax")]
