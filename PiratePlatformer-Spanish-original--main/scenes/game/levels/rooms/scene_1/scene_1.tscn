@@ -188,7 +188,7 @@ moving_direction = "right"
 position = Vector2(1175, 414)
 
 [node name="MainCharacter" parent="Main" instance=ExtResource("15_ooixx")]
-position = Vector2(94, 390)
+position = Vector2(95, 390)
 
 [node name="TileMap" type="TileMap" parent="Main"]
 position = Vector2(-1, -17)
